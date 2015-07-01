@@ -1,5 +1,5 @@
 {
-  "name": "Basic Sass Project",
+  "name": "basicSassProject",
   "version": "0.0.5",
   "description": "This is a boilerplate for a simple and basic web project using Sass",
   "main": "Gruntfile.js",
