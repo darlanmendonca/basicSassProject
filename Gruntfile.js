@@ -19,22 +19,42 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         files: {
-          '<%= env.buildDir %>/style/style.css' : '<%= env.appDir %>/sass/style.scss'
+          '<%= env.buildDir %>/styles/style.css' : '<%= env.appDir %>/sass/style.scss'
         }
+      }
+    },
+
+    copy: {
+      html: {
+        files: [
+          {expand: true, cwd: '<%= env.appDir %>/html/', src: ['**'], dest: '<%= env.buildDir %>'}
+        ]
+      },
+      
+      images: {
+        files: [
+          {expand: true, cwd: '<%= env.appDir %>', src: ['img/**'], dest: '<%= env.buildDir %>'}
+        ]
       }
     },
 
     watch: {
       css: {
-        files: '**/*.scss',
+        files: '<%= env.appDir %>/**/*.scss',
         tasks: ['sass']
-      }
+      },
+
+      html: {
+        files: ['<%= env.appDir %>/**/*.html'],
+        tasks: ['copy:html']
+      },
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
-  grunt.registerTask('dev',['clean', 'sass', 'watch']);
+  grunt.registerTask('build:dev',['clean', 'sass', 'copy:html', 'copy:images', 'watch']);
 };
