@@ -1,6 +1,6 @@
 {
   "name": "basicSassProject",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "This is a boilerplate for a simple and basic web project using Sass",
   "main": "Gruntfile.js",
   "devDependencies": {
