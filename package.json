@@ -1,36 +1,26 @@
 {
-  "name": "basicSassProject",
-  "version": "0.3.0",
-  "description": "This is a boilerplate for a simple and basic web project using Sass",
-  "main": "Gruntfile.js",
-  "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-clean": "^0.7.0",
-    "grunt-contrib-copy": "^0.8.2",
-    "grunt-contrib-cssmin": "^0.14.0",
-    "grunt-contrib-sass": "^0.9.2",
-    "grunt-contrib-watch": "^0.6.1"
-  },
+  "name": "generator-basicSassProject",
+  "version": "0.0.1",
+  "description": "Simple and basic web project using Sass and Grunt",
+  "main": "app/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/akfzambrana/basicSassProject.git"
+    "url": "git+https://github.com/akfzambrana/basicSassProject"
   },
   "keywords": [
-    "boilerplate",
-    "frontend",
     "sass",
-    "development",
-    "project",
-    "simple",
-    "basic"
+    "grunt"
   ],
-  "author": "Andrea Zambrana <zambrana.akf@gmail.com>",
+  "author": "Andréa Zambrana <@gmail.com> (https://github.com/akfzambrana)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/akfzambrana/basicSassProject/issues"
   },
-  "homepage": "https://github.com/akfzambrana/basicSassProject"
+  "homepage": "https://github.com/akfzambrana/basicSassProject#readme",
+  "dependencies": {
+    "yeoman-generator": "^0.22.1"
+  }
 }

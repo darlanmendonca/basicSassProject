@@ -1,16 +1,16 @@
 # Basic Sass Project v0.3.0
-This is a boilerplate for a simple and basic web project using Sass and Grunt =P
+This is a Yeoman generator for a simple and basic web project using Sass and Grunt =P
 
 ## Install 
-To install Grunt plugins
-```console
-> npm install
+To create project, first install this module as global, then inside your directory project, run:
+```sh
+yo basicSassProject
 ```
 
 ## Usage
 ### Build task _(compile)_
 #### For development 
-```console
+```sh
 > grunt build:dev
 ```
 
