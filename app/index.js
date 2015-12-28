@@ -19,7 +19,7 @@ module.exports = generators.Base.extend({
 
   dependencies: function() {
     this.installDependencies({
-      bower: true,
+      bower: false,
       npm: true,
       skipInstall: true
     });

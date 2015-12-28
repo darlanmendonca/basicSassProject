@@ -4,7 +4,7 @@
   "description": "Simple and basic web project using Sass and Grunt",
   "main": "app/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "scripts/test"
   },
   "repository": {
     "type": "git",
@@ -14,13 +14,24 @@
     "sass",
     "grunt"
   ],
-  "author": "Andréa Zambrana <@gmail.com> (https://github.com/akfzambrana)",
+  "author": "Andréa Zambrana <zambrana.akf@gmail.com> (https://github.com/akfzambrana)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/akfzambrana/basicSassProject/issues"
   },
   "homepage": "https://github.com/akfzambrana/basicSassProject#readme",
   "dependencies": {
-    "yeoman-generator": "^0.22.1"
+    "mocha": "^2.3.4",
+    "yeoman-assert": "^2.1.1",
+    "yeoman-generator": "^0.22.1",
+    "yeoman-test": "^1.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "istanbul": "^0.4.1",
+    "jshint": "^2.8.0",
+    "jshint-stylish": "^2.1.0"
   }
 }

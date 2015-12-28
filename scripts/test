@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -e
+
+node node_modules/.bin/istanbul cover _mocha -- --bail --reporter spec test/unit
